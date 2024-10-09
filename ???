@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My love</title>
+        <style>
+            body{
+                margin-top: 250px;
+                position: center;
+            }
+            h3 {
+                color: black;
+                text-align: center;
+                font-style: arial;
+            }
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            button:hover
+             {
+                transition: transform 1.1s;
+                transform: scale(1.1);
+                color: blueviolet;       
+            }
+            .btn {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>DO YOU LOVE ME?</h3>
+        <img id="image" src="https://i.pinimg.com/originals/d6/a6/cf/d6a6cf80ba989756110ccb7aacefdc6a.gif" alt="">
+
+        <div class="btn">
+            <button onclick="Click('yes')">YES</button>
+            <button onclick="Click('no')">NO</button>
+        </div>
+
+        <h3 id="response"></h3>
+
+        <script>
+            alert ('hiiiii akiiiiiii');
+            alert ('you need to answer this!');
+            alert ('happy motmotttttt!');
+            
+            function Click(answer) {
+                var img = document.getElementById('image');
+                var response = document.getElementById('response');
+                
+                if (answer === 'yes') {
+                    img.src = 'https://i.pinimg.com/originals/63/90/3d/63903d9f34f02388fff5d0c7dd6e5085.gif';
+                    response.innerText = 'Aaaaaaaackkk!!!!! wabyuuuuuuuu so mats! MWAAHH!';
+                } else if (answer === 'no') {
+                    img.src = 'https://i.pinimg.com/originals/12/b3/b5/12b3b5a0fd2ff64136509dea171b1df4.gif';
+                    response.innerText = 'PANGET MO!';
+                }
+            }
+        </script>
+    </body>
+</html>
